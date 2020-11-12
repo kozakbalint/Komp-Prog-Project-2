@@ -1,5 +1,10 @@
 .content{
     text-align: justify;
+    padding-top: 80px;
+}
+.text{
+    padding-left:25px;
+    padding-right:25px;
 }
 h1{
     text-align: center;
