@@ -6,6 +6,10 @@
     padding-left:25px;
     padding-right:25px;
 }
+.form{
+    margin: auto;
+    width: 70%;
+}
 h1{
     text-align: center;
 }
