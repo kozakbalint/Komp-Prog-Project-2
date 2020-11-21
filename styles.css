@@ -3,18 +3,17 @@
     padding-top: 80px;
 }
 .text{
+    margin: auto;
     padding-left:25px;
     padding-right:25px;
+    width: 90%;
 }
 .form{
     margin: auto;
-    width: 70%;
+    width: 90%;
 }
 h1{
     text-align: center;
-}
-h2{
-    padding-left: 25px;
 }
 footer{
     text-align: center;

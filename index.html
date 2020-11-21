@@ -11,11 +11,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Háttértárak</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Háttértárak</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -31,14 +31,17 @@
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#"
-              >Lorem Ipsum <span class="sr-only">(current)</span></a
+              >Háttértártípusok<span class="sr-only"></span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Lorem Ipsum </a>
+            <a class="nav-link" href="#">A merevlemez felépítése és működése</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Lorem Ipsum </a>
+            <a class="nav-link" href="#">Elektronikus háttértár (SSD)</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Elektronikus háttértár előnyei</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#El">Értékelő lap</a>
@@ -48,94 +51,159 @@
     </nav>
     <div class="content">
       <div class="text">
-        <h1>Lorem Ipsum</h1>
+        <h1>Háttértárak</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin justo
-          sem, vestibulum eu neque in, interdum lacinia orci. Proin aliquam
-          convallis odio ut consequat. Maecenas felis nisi, vehicula a orci sed,
-          fringilla facilisis lorem. Nunc lectus nulla, hendrerit in venenatis
-          in, auctor sed arcu. Donec ante ligula, maximus et viverra sit amet,
-          venenatis eu risus. Fusce at libero in est tincidunt imperdiet non ut
-          elit. Donec eleifend purus non massa commodo, nec feugiat leo
-          sollicitudin. Donec volutpat dui at aliquam mattis. Pellentesque non
-          ex enim. Ut nec justo commodo, vulputate lacus a, accumsan odio. Donec
-          convallis imperdiet metus, sed congue nibh venenatis at. Etiam vitae
-          ante aliquam, lacinia odio at, consequat erat. Ut luctus, ex id
-          eleifend suscipit, metus arcu mollis tellus, et vehicula ex nisl id
-          sapien. Nulla mattis dui augue, ut imperdiet dolor finibus non.
+          A háttértár olyan számítógépes hardverelem, mely nagy mennyiségű adatot képes tárolni, és azokat a számítógép kikapcsolása után is megőrzi. Erre azért van szükség, mert a számítógép műveleti memóriájában csak ideiglenesen lehet adatot tárolni, ennek tartalma a számítógép kikapcsolása után törlődik.
+        </p>
+        <h2>Háttértártípusok</h2>
+        <p>
+          A tároló eszközök különböző (mágneses, elektronikus és optikai) elveken tárolják az adatokat.
+        </p>
+        <h4>Mágneses tárak</h4>
+        <p>A mágneses tárolás mágnesesen bevont felületen különböző mágnesezési mintákat használ az információk tárolására. A mágneses tárolás nem illékony. Az információhoz egy vagy több olvasó / író fej segítségével férhetünk hozzá. Az olvasási / írási fej csak a felület egy részét fedi le, így az adatokhoz való hozzáféréshez a fejet vagy a közeget, vagy mindkettőt el kell mozgatni a másikhoz képest. Ilyen eszközök a floppy, a merevlemez, a mágnesszalag.
+        </p>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="floppy_card.jpg" class="card-img-top" alt="Floppy">
+              <div class="card-body">
+                <h5 class="card-title">Floppy</h5>
+                <p class="card-text">A hajlékonylemez más néven floppy adattároló eszköz, ami egy mágnesezhető felületű vékony, hajlékony lemezből és egy azt védő négyszögletes, keményebb műanyag tokból áll.</p>
+                <a href="https://hu.wikipedia.org/wiki/Hajl%C3%A9konylemez" class="btn btn-dark">Wikipedia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="hdd_card.jpg" class="card-img-top" alt="Merevlemez">
+              <div class="card-body">
+                <h5 class="card-title">Merevlemez</h5>
+                <p class="card-text">A merevlemez egy számítástechnikai adattároló berendezés. Az adatokat kettes számrendszerben, mágnesezhető réteggel bevont, forgó lemezeken tárolja.</p>
+                <a href="https://hu.wikipedia.org/wiki/Merevlemez" class="btn btn-dark">Wikipedia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="magnesszalag_card.jpeg" class="card-img-top" alt="Mágnesszalag">
+              <div class="card-body">
+                <h5 class="card-title">Mágnesszalag</h5>
+                <p class="card-text">A mágnesszalagos adattárolás olyan rendszer, amely digitális információkat tárol mágnesszalagon digitális felvétel segítségével.</p>
+                <a href="https://hu.wikipedia.org/wiki/M%C3%A1gnesszalag" class="btn btn-dark">Wikipedia</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Optikai tárak</h4>
+        <p>
+          Az optikai tároló, a tipikus optikai lemez, deformációkban tárolja az információkat egy kör alakú lemez felületén, és ezeket úgy olvassa el, hogy lézerdiódával megvilágítják a felületet és megfigyelik a visszaverődést. Az optikai lemezek tárolása nem illékony. A deformitások lehetnek állandóak (csak olvasható adathordozók), egyszer képződhetnek (egyszer írható adathordozók) vagy visszafordíthatók (írható vagy olvasható / írható adathordozók). Ilyen eszközök a CD, a DVD és a Blu-ray.
+        </p>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="cd_card.jpg" class="card-img-top" alt="CD">
+              <div class="card-body">
+                <h5 class="card-title">CD</h5>
+                <p class="card-text">A CD (a Compact Disc rövidítése, vagy magyarul kompaktlemez) általában mintegy 700 MB kapacitású optikai tároló, amely hang, kép, valamint adat digitális formátumú tárolására használatos.</p>
+                <a href="https://hu.wikipedia.org/wiki/CD" class="btn btn-dark">Wikipedia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="dvd_card.jpg" class="card-img-top" alt="DVD">
+              <div class="card-body">
+                <h5 class="card-title">DVD</h5>
+                <p class="card-text">A DVD (Digital Versatile Disc – digitális sokoldalú lemez, vagy még korábban a Digital Video Disc rövidítése) nagy kapacitású optikai tároló, amely főként mozgókép és jó minőségű hang, valamint adat tárolására használatos.</p>
+                <a href="https://hu.wikipedia.org/wiki/DVD" class="btn btn-dark">Wikipedia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="Bluray_card.png" class="card-img-top" alt="Blu-ray">
+              <div class="card-body">
+                <h5 class="card-title">Blu-ray</h5>
+                <p class="card-text">A blu-ray disc (röviden: BD vagy BR) nagy tárolókapacitású digitális optikai tárolóeszköz-formátum, amely mintegy 50GB adat tárolására alkalmas háttértároló.</p>
+                <a href="https://hu.wikipedia.org/wiki/Blu-ray_disc" class="btn btn-dark">Wikipedia</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Elektronikus tárak</h4>
+        <p>
+          A félvezető memória félvezető-alapú integrált áramkör (IC) chipeket használ az információk tárolására. Az adatokat általában fém – oxid – félvezető (MOS) memória cellákban tárolják. A félvezető memória chip millió memória cellát tartalmazhat, amelyek apró MOS terepi tranzisztorokból (MOSFET) és / vagy MOS kondenzátorokból állnak. A félvezető memória nem felejtő formái lebegő kapus MOSFET-eket használ. Ilyen eszközök a pendirve, a flash és az SSD.
+        </p>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="pendrive_card.jpg" class="card-img-top" alt="Pendrive">
+              <div class="card-body">
+                <h5 class="card-title">Pendrive</h5>
+                <p class="card-text">A pendrive USB-csatlakozóval egybeépített flash memória. Tárolási kapacitása 256 MB-tól 2 TB-ig terjed. Némelyik képes 10 évig megőrizni az adatokat, és egymillió írási-törlési ciklust is kibír.</p>
+                <a href="https://hu.wikipedia.org/wiki/Pendrive" class="btn btn-dark">Wikipedia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="sdcard_card.jpg" class="card-img-top" alt="Memóriakártya">
+              <div class="card-body">
+                <h5 class="card-title">Memóriakártya</h5>
+                <p class="card-text">A memóriakártya olyan hordozható digitális tárolóeszköz, amelynek alakja kártyaszerű. Főbb tulajdonságai: hordozhatóság, energia nélküli adatmegmaradás, kis méret, többszöri írhatóság.</p>
+                <a href="https://hu.wikipedia.org/wiki/Mem%C3%B3riak%C3%A1rtya" class="btn btn-dark">Wikipedia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="ssd_card.jpg" class="card-img-top" alt="SSD">
+              <div class="card-body">
+                <h5 class="card-title">SSD</h5>
+                <p class="card-text">SSD egy olyan, mozgó alkatrészek nélküli adattároló eszköz, ami memóriában tárolja az adatot...</p>
+                <a href="https://hu.wikipedia.org/wiki/Tart%C3%B3s_%C3%A1llapot%C3%BA_meghajt%C3%B3" class="btn btn-dark">Wikipedia</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>A merevlemez felépítése és működése</h2>
+        <p>
+          A merevlemez, egy olyan elektromechanikus adattároló eszköz, amely mágneses elven működik. Egy vagy több mágneses anyaggal bevont, gyorsan forgó lemezzel tárolja a digitális adatokat. A tálak mágneses fejekkel vannak párosítva, általában egy mozgó karon vannak elrendezve, amelyek adatokat olvasnak és írnak a lemez felületére. Az adatokhoz véletlenszerű hozzáférés révén férnek hozzá, ami azt jelenti, hogy az egyes adatblokkok bármilyen sorrendben tárolhatók és visszakereshetők. A HDD-k a nem felejtő tárolók, amelyek kikapcsolt állapotban is megőrzik a tárolt adatokat.
         </p>
         <p>
-          Aliquam erat volutpat. Quisque elit nunc, elementum vel mi faucibus,
-          faucibus pretium mauris. Quisque sit amet pharetra dolor, ut mollis
-          nisi. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Nunc sollicitudin pellentesque massa
-          at ornare. Fusce vel faucibus felis. Phasellus rutrum, risus et
-          tincidunt commodo, leo odio elementum enim, quis ultrices est risus
-          nec arcu. Vivamus nisl felis, aliquet eu imperdiet at, euismod sed
-          massa. Nam tempus elit eu eros bibendum aliquam.
+          Egy winchesterben több lemez is lehet, és jellemzően a lemez mindkét oldalát használják adattárolásra, így a lemezekhez általában két fej tartozik: alul-felül egy. Mivel az azonos fej- és lemezszámú meghajtók kapacitása eltérő lehet, a végleges kapacitást és az adattárolásra használt területeket a gyártás során úgynevezett szervóírással alakítják ki. A HDD-beli lemezeket azonos központú, különböző sugarú körök tagolják, ezeket sávoknak (trackeknek) nevezzük. A sávok azonosítása számokkal történik, a legkülső sáv a 0-s sorszámú. Azokat a sávokat, melyek egymás alatt helyezkednek el, cilindernek nevezzük. A sávokat tovább lehet bontani ún. szektorokra. Ezeket is sorszámozzák, ezek eggyel kezdődnek. A HDD gyártás során kialakított szektorokat a meghajtó formázása közben csoportosíthatjuk, így alakíthatunk ki helyfoglalási egységeket, azaz clustereket. A clusterek minimális mérete megegyezhet a szektormérettel (512 bájt), de legtöbbször a szektor többszöröse, pontosan 1, 2, 4, 8, 16, 32, 64, vagy 128-szoros, így maximum 64 kb. Egy cluster csak egy fájlt tartalmazhat, ha kis méretű a fájl, és a cluster nem íródott tele, a fennmaradó üres rész elvész. Ezért nevezhetjük a legkisebb címezhető egységnek a HDD-ben.
         </p>
+        <h2>Elektronikus háttértár (SSD)</h2>
         <p>
-          Aenean in hendrerit ligula, a congue nisl. Aenean facilisis dolor ex,
-          a vestibulum metus ornare ut. Duis ipsum arcu, ultrices quis hendrerit
-          et, sollicitudin sed purus. Sed venenatis, dui et fermentum feugiat,
-          lorem nulla sollicitudin urna, a pulvinar tellus nulla ut urna. Ut
-          elit dui, blandit non tempus vitae, sagittis quis urna. Donec
-          convallis magna sapien, non faucibus ipsum commodo sed. Nam ac
-          molestie neque. Ut in pellentesque eros, vel dapibus orci. Etiam
-          scelerisque nunc id varius pellentesque. Pellentesque efficitur ipsum
-          at enim lobortis pellentesque. Etiam fringilla erat quis sagittis
-          fermentum. Nunc eu nisi purus. Proin vel tempus risus, ac euismod
-          magna.
+          A tartós állapotú meghajtó (más néven félvezető alapú meghajtó vagy szilárdtest-meghajtó, angol rövidítése SSD (a Solid-state drive kifejezésből)) félvezetős memóriát használó adattároló eszköz.
+
+          Bővebben, az SSD egy olyan, mozgó alkatrészek nélküli adattároló eszköz, ami memóriában tárolja az adatot, a környezetéhez, illetve a gazdaszámítógéphez a merevlemezekhez hasonlóan SATA vagy egyéb (SCSI, PCI Express, USB, stb.) csatlakozófelülettel csatlakozik és azokhoz hasonlóan blokkos adatelérést biztosít. Az SSD eszközökben a gyártók különböző típusú memóriákat használhatnak, mint pl. flash vagy különböző RAM fajták – ezt az ár- és a teljesítményigények határozzák meg.
+          
+          A szilárdtest – angolul solid state – szó arra utal, hogy ez a technológia nem tartalmaz mozgó alkatrészeket, mint a hagyományos merevlemezek, hajlékonylemezek. A mozgó alkatrészek hiánya miatt kevésbé sérülékeny, mint a hagyományos merevlemez, hangtalan, kevés hőt termel, nincsenek a mechanikából adódó késleltetések, az adathozzáférés egyenletesen gyors.
         </p>
+        <h2>Elektronikus háttértár előnyei a merevlemezzel szemben</h2>
         <p>
-          In imperdiet tellus vitae pulvinar condimentum. Duis id erat tempus,
-          congue nunc vel, pharetra orci. Pellentesque gravida ex libero.
-          Maecenas feugiat diam vitae tellus ullamcorper, vitae dapibus ante
-          ultrices. Phasellus placerat metus purus, id tempor nunc eleifend non.
-          Nullam commodo, lacus eu mattis cursus, nisl nunc tincidunt odio, nec
-          posuere ipsum enim eget nibh. In commodo erat sed tellus viverra
-          lobortis. Fusce tincidunt purus vel urna viverra blandit. Morbi vitae
-          leo ultrices turpis laoreet porta eget id purus. In tempus vulputate
-          ullamcorper.
-        </p>
-        <p>
-          Maecenas orci augue, iaculis vitae elementum a, vulputate eu lorem.
-          Integer pellentesque arcu eget mauris pharetra tempus. Sed quis
-          suscipit mi. Donec sit amet mattis elit, a sollicitudin erat. Praesent
-          pharetra, elit a eleifend viverra, metus neque convallis arcu, at
-          consequat enim ipsum ut diam. Ut eget molestie leo, in porttitor
-          libero. Cras massa orci, bibendum feugiat nibh in, tincidunt lacinia
-          mauris. Quisque sit amet ante ex. Proin varius volutpat augue, vitae
-          posuere leo molestie vitae. Fusce ac auctor massa. Duis tincidunt
-          ultrices eros, sed placerat felis lacinia ut. Cras eu feugiat magna.
-        </p>
-        <p>
-          In imperdiet tellus vitae pulvinar condimentum. Duis id erat tempus,
-          congue nunc vel, pharetra orci. Pellentesque gravida ex libero.
-          Maecenas feugiat diam vitae tellus ullamcorper, vitae dapibus ante
-          ultrices. Phasellus placerat metus purus, id tempor nunc eleifend non.
-          Nullam commodo, lacus eu mattis cursus, nisl nunc tincidunt odio, nec
-          posuere ipsum enim eget nibh. In commodo erat sed tellus viverra
-          lobortis. Fusce tincidunt purus vel urna viverra blandit. Morbi vitae
-          leo ultrices turpis laoreet porta eget id purus. In tempus vulputate
-          ullamcorper.
-        </p>
-        <p>
-          Aenean in hendrerit ligula, a congue nisl. Aenean facilisis dolor ex,
-          a vestibulum metus ornare ut. Duis ipsum arcu, ultrices quis hendrerit
-          et, sollicitudin sed purus. Sed venenatis, dui et fermentum feugiat,
-          lorem nulla sollicitudin urna, a pulvinar tellus nulla ut urna. Ut
-          elit dui, blandit non tempus vitae, sagittis quis urna. Donec
-          convallis magna sapien, non faucibus ipsum commodo sed. Nam ac
-          molestie neque. Ut in pellentesque eros, vel dapibus orci. Etiam
-          scelerisque nunc id varius pellentesque. Pellentesque efficitur ipsum
-          at enim lobortis pellentesque. Etiam fringilla erat quis sagittis
-          fermentum. Nunc eu nisi purus. Proin vel tempus risus, ac euismod
-          magna.
+          <ul>
+            <li>rövid indulási idő, nincs felpörgés, Power On - Ready átmenet</li>
+            <li>mozgó alkatrészek teljes hiánya</li>
+            <li>kisebb olvasási várakozási idő</li>
+            <li>kisebb írási várakozási idő</li>
+            <li>nagyobb olvasási sebesség</li>
+            <li>nagyobb írási sebesség</li>
+            <li>alacsony áramfelvétel</li>
+            <li>kisebb hőtermelés</li>
+            <li>a zaj teljes hiánya</li>
+            <li>mechanikai megbízhatóság – képes elviselni szélsőséges ütést, vibrációt, nyomást, hőmérsékletet</li>
+            <li>bármilyen helyzetben beépíthető, használható (fejjel lefelé, döntve)</li>
+            <li>széles hőmérsékleti tartományban képes működni</li>
+            <li>kis fizikai méret és tömeg</li>
+          </ul>
         </p>
       </div>
-      <h2 id="El">Értékelő lap:</h2>
       <div class="form">
+        <h2 id="El">Értékelő lap:</h2>
         <div class="form-horizontal">
           <h3>Tartalom</h3>
           <div class="form-group row">
