@@ -1,7 +1,6 @@
 maxPoint = 130;
 
 function GetValues() {
-    
   //tartalom
   fogIsm = parseInt(document.getElementById("fogIsm").value);
   fogDef = parseInt(document.getElementById("fogDef").value);
@@ -22,7 +21,7 @@ function GetValues() {
 }
 
 function Calculate() {
-  sumPoints =
+  szobeli =
     fogIsm +
     fogDef +
     tarKif +
@@ -31,29 +30,35 @@ function Calculate() {
     idBe +
     feEp +
     elAd +
-    szaNye +
-    iras;
+    szaNye;
 
-    console.log(iras);
-    console.log(sumPoints);
+    if(isNaN(szobeli) && isNaN(iras)){
+        alert("Töltsd ki az összes mezőt.")
+        return
+    }
+    
+    if(szobeli+iras > 130){
+        alert("Ne adj meg nagyobb számokat a maximumnál.")
+        return
+    }
 
-    if(iras <= 12 || sumPoints-100 <= 3.6){
+    if(iras <= 12 || szobeli <= 3.6){
         document.getElementById("jegy").value = 1
-        console.log("1") 
-    }else if (sumPoints/maxPoint <= 0.24) {
+        console.log(`1 \n ${szobeli} \n ${iras}` ) 
+    }else if ((szobeli+iras)/maxPoint <= 0.24) {
         document.getElementById("jegy").value = 1
-        console.log("1") 
-    }else if (sumPoints/maxPoint <= 0.33) {
+        console.log(`1 \n ${szobeli} \n ${iras} \n ${(szobeli+iras)/maxPoint}`) 
+    }else if ((szobeli+iras)/maxPoint <= 0.33) {
         document.getElementById("jegy").value = 2
-        console.log("2") 
-    }else if (sumPoints/maxPoint <= 0.47) {
+        console.log(`2 \n ${szobeli} \n ${iras} \n ${(szobeli+iras)/maxPoint}`) 
+    }else if ((szobeli+iras)/maxPoint <= 0.47) {
         document.getElementById("jegy").value = 3
-        console.log("3") 
-    }else if (sumPoints/maxPoint < 0.60) {
+        console.log(`3 \n ${szobeli} \n ${iras} \n ${(szobeli+iras)/maxPoint}`) 
+    }else if ((szobeli+iras)/maxPoint < 0.60) {
         document.getElementById("jegy").value = 4
-        console.log("4") 
+        console.log(`4 \n ${szobeli} \n ${iras} \n ${(szobeli+iras)/maxPoint}`) 
     }else{
         document.getElementById("jegy").value = 5
-        console.log("5") 
+        console.log(`5 \n ${szobeli} \n ${iras} \n ${(szobeli+iras)/maxPoint}`) 
     }
 }
