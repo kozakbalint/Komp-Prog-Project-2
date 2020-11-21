@@ -17,7 +17,6 @@ function GetValues() {
   iras = parseInt(document.getElementById("iras").value);
    
   Calculate();
-  console.log("asdasda") 
 }
 
 function Calculate() {
@@ -32,7 +31,7 @@ function Calculate() {
     elAd +
     szaNye;
 
-    if(isNaN(szobeli) && isNaN(iras)){
+    if(isNaN(szobeli) || isNaN(iras)){
         alert("Töltsd ki az összes mezőt.")
         return
     }
